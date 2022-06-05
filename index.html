@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Elementor page builder</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Joan&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <!-- fonts awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- css linkup -->
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+  <body>
+      
+    <div class="container mt-5">
+      <div class="row">
+  <!-- elementor editor -->
+       <div class="col-md-3">
+          <div class="card">
+            <div class="card-header bg-dar text-success d-flex elm text-white">
+             <div class="col-md-2">
+              <i class="fa-solid fa-bars"></i>
+             </div>
+             <div class="col-md-8">
+               <h6>EDIT ELEMENTOR</h6>
+             </div>
+             <div class="col-md-2">
+              <i class="fa-solid fa-table-cells"></i>
+             </div>
+            </div>
+            <div class="card-body">
+
+             <div class="form-group">
+               <label class="btn btn-sm btn-outline-success" for="">Heading</label>
+               <input id="heading" class="form-control" type="text">
+              </div>
+
+              <div class="form-group">
+                <label class="btn btn-sm btn-outline-success" for="">Paragraph</label>
+                <input id="paragraph" class="form-control" type="text">
+              </div>
+
+              <div class="form-group mt-3">
+                <label class="btn btn-sm btn-outline-success" for="">Text Align</label><br>
+                <label>
+                  <input name="align"  class="align" type="radio" value="left">
+                  Left
+                </label>
+                <label>
+                  <input name="align" class="align" type="radio" value="center">
+                  Center
+                </label>
+                <label>
+                  <input name="align" class="align" type="radio" value="right">
+                  Right
+                </label>
+              </div>
+
+              <div class="form-group mt-3">
+                <label class="btn btn-sm btn-outline-success" for="">Size</label>
+                <input class="w-100 font_size" min= "0" max="100" step="1px" type="range">
+               </div>
+
+               <div class="form-group">
+                <label class="btn btn-sm btn-outline-success mt-2" for="">Color</label><br>
+                <input id="color" class="" type="color">
+               </div>
+
+               <div class="form-group mt-3">
+                <label class="btn btn-sm btn-outline-success" for="">Font-family</label>
+                <select class="form-control" name="" id="ff">
+                  <option value="--Select--">--Select--</option>
+                  <option value="Poppins">Poppins</option>
+                  <option value="Roboto">Roboto</option>
+                  <option value="Impact">Impact</option>
+                  <option value="Gentium Plus">Gentium Plus</option>
+                  <option value="Joan">Joan</option>
+                  <option value="Titillium Web">Titillium Web</option>
+                </select>
+               </div>
+
+            </div>
+          </div>
+       </div>
+  <!-- elementor output -->
+       <div class="col-md-9 bg-secondary rounded-1">
+         <section>
+           <h1></h1>
+           <p></p>
+         </section>
+       </div>
+      </div>
+    </div>
+    
+
+    <!-- javascript -->
+    <script src="./app.js"></script>
+  </body>
+</html>
